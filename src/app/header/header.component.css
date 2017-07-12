@@ -1,0 +1,54 @@
+.row {
+  height: 80px;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.name {
+  margin-top: 25px;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: normal;
+  float: left;
+  text-shadow: rgba(0, 0, 0, .25) 1px 1px 1px;
+  display: inline-block; zoom: 1;
+}
+
+.name a, .name a:link, .name a:active, .name a:visited, .name a:hover {
+  color: #FFF;
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 0;
+}
+
+.nav ul, .nav ol {
+  float: left;
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav { font-size: 21px; text-shadow:0.5px 0.5px 4px #000; }
+.nav > li { float: left; display: block; position: relative; padding: 0; margin: 0; }
+.nav > li:first-child { }
+.nav > li:last-child { padding-right: 0px }
+.nav > li.active { }
+.nav > li.active > a { color: #666666; cursor: default; text-decoration: none; outline: 0; }
+.nav > li.active:hover { color: #33ccff; cursor: default; text-decoration: none; }
+.nav > li > a { color: #FFF; }
+.nav > li > a:hover { color: #33ccff; text-shadow: rgba(0, 0, 0, .25) 0px 1px 1px; }
+.nav > li ul { margin-bottom: 0; }
+.nav > li > a:first-child { position: relative; padding-right: 20px; display: block; text-decoration: none; font-size: 21px; }
+.nav > li > input { margin: 0 10px; }
+
+.nav .navLinkHighlight {
+  color: #33ccff;
+  text-shadow: rgba(0, 0, 0, .25) 1px 1px 1px;
+}
+
+.top-nav {
+  margin-left: 0; margin-top: 30px; padding: 0; float: right;
+}
