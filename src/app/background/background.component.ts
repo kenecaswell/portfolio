@@ -23,7 +23,7 @@ export class BackgroundComponent implements OnInit {
   onResize(event) {
     const sw = event ? event.target.innerWidth : window.innerWidth;
     const sh = event ? event.target.innerHeight : window.innerHeight;
-
+    console.log(sw + ' x ' + sh);
     const w = 1600;
     const h = 900;
 
@@ -38,11 +38,14 @@ export class BackgroundComponent implements OnInit {
       scaleRatio = yRatio; // + .5; // to allow parallax, add .5 to ratio
     }
 
-    const bgImgW = scaleRatio * w;
-    const bgImgH = scaleRatio * h;
-
-    this.bgTop = (bgImgH - sh) * -0.5;
-    this.bgLeft = (bgImgW - sw) * -0.5;
+    const bgImgW = Math.ceil(scaleRatio * w);
+    const bgImgH = Math.ceil(scaleRatio * h);
+    const top = Math.floor((bgImgH - sh) * -0.5);
+    const left = Math.floor((bgImgW - sw) * -0.5);
+    console.log(bgImgW + ' x ' + bgImgH);
+    console.log(top + ' x ' + left);
+    this.bgTop = top;
+    this.bgLeft = left;
     this.textureWidth = bgImgW;
     this.textureHeight = bgImgH;
     this.imageWidth = bgImgW;

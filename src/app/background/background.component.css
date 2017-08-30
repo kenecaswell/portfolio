@@ -41,3 +41,8 @@ http://www.emanueleferonato.com/2010/11/13/full-screen-centered-background-image
   height: 100%;
   z-index: -2;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
