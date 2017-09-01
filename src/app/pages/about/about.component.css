@@ -1,0 +1,37 @@
+.about {
+  margin: 54px 0px 50px 0px;
+}
+
+.about p {
+  font-size: 16px;
+  text-shadow: rgba(0, 0, 0, .25) 1px 1px 1px;
+}
+
+.about-heading {
+  margin-bottom: 12px;
+  color: #FFF;
+  font-family: "Helvetica Neue Ultra Light", "Helvetica Neue", Arial;
+  font-weight: lighter;
+  font-size: 92px;
+  letter-spacing: normal;
+  text-shadow: rgba(0, 0, 0, .25) 1px 1px 1px;
+}
+
+.about a { color: #cccccc; text-decoration: none; outline: 0; }
+.about a:link {color: #cccccc;}
+.about a:active {color: #cccccc;}
+.about a:visited {color: #08C;}
+.about a:hover {color: #08C; text-decoration: none;}
+.about a:focus { outline: 0 !important; }
+.about a:-webkit-any-link { color: #00ccff; text-decoration:none !important; }
+
+.about .specialties {
+  color: #ccc;
+  font-size: 15.5px;
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+  padding: 8px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(25, 25, 25, .25);
+}
