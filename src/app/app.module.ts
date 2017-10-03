@@ -9,6 +9,8 @@ import { BackgroundComponent } from './background/background.component';
 import { HomeComponent } from './pages/home/home.component';
 import { WorkComponent } from './pages/work/work.component';
 import { AboutComponent } from './pages/about/about.component';
+import { NavComponent } from './pages/work/nav/nav.component';
+import { GalleryComponent } from './pages/work/gallery/gallery.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,7 +26,9 @@ const appRoutes: Routes = [
     BackgroundComponent,
     HomeComponent,
     WorkComponent,
-    AboutComponent
+    AboutComponent,
+    NavComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
