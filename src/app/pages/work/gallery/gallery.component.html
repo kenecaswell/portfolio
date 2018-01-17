@@ -1,5 +1,13 @@
 <div class="row">
   <div class="sm-col-12">
-    <ul class="gallery"></ul>
+    <ul class="gallery">
+      <li class="gallery-thumb">
+        <a href="#"
+           *ngFor="let thumb of thumbs">
+          <img src="{{thumb.img}}" alt="{{thumb.name}}" width="200" height="200">
+          <div class="gallery-thumb-name">{{thumb.name}}</div>
+        </a>
+      </li>
+    </ul>
   </div>
 </div>

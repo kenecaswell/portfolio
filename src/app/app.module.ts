@@ -11,6 +11,7 @@ import { WorkComponent } from './pages/work/work.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NavComponent } from './pages/work/nav/nav.component';
 import { GalleryComponent } from './pages/work/gallery/gallery.component';
+import { GalleryDetailComponent } from './pages/work/gallery/gallery-detail/gallery-detail.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     WorkComponent,
     AboutComponent,
     NavComponent,
-    GalleryComponent
+    GalleryComponent,
+    GalleryDetailComponent
   ],
   imports: [
     BrowserModule,
